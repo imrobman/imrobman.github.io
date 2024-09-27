@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Write-In Instructions - Rob Man for President</title>
+  <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write-In Instructions - Robert Short for President</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="instructions-header">
-    <h1>Write-In Rob Man</h1>
-    <p>Follow these steps to write Rob Man in for president in your state.</p>
-  </header>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Robert Short</a></div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="write-in.html">Write-In</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Instructions Section -->
-  <section class="instructions">
-    <h2>How to Write Me In</h2>
-    <p>In Florida, write in Rob Man under the "Presidential Candidate" section.</p>
-    <p>In Pennsylvania, write in Rob Man in the "Other" section.</p>
-    <!-- More states with instructions -->
+  <section class="write-in">
+    <h1>Write-In Instructions by State</h1>
+    <p>Select your state from the dropdown below to view specific write-in instructions:</p>
+    <form>
+      <label for="states">Choose your state:</label>
+      <select id="states" name="states" onchange="window.location.href=this.value;">
+        <option value="">Select a state...</option>
+        <option value="alabama.html">Alabama</option>
+        <option value="alaska.html">Alaska</option>
+        <option value="arizona.html">Arizona</option>
+        <option value="arkansas.html">Arkansas</option>
+        <option value="california.html">California</option>
+        <option value="colorado.html">Colorado</option>
+        <option value="connecticut.html">Connecticut</option>
+        <option value="delaware.html">Delaware</option>
+        <option value="florida.html">Florida</option>
+        <option value="georgia.html">Georgia</option>
+        <option value="hawaii.html">Hawaii</option>
+        <option value="idaho.html">Idaho</option>
+        <option value="illinois.html">Illinois</option>
+        <option value="indiana.html">Indiana</option>
+        <option value="iowa.html">Iowa</option>
+        <option value="kansas.html">Kansas</option>
+        <option value="kentucky.html">Kentucky</option>
+        <option value="louisiana.html">Louisiana</option>
+        <option value="maine.html">Maine</option>
+        <option value="maryland.html">Maryland</option>
+        <option value="massachusetts.html">Massachusetts</option>
+        <option value="michigan.html">Michigan</option>
+        <option value="minnesota.html">Minnesota</option>
+        <option value="mississippi.html">Mississippi</option>
+        <option value="missouri.html">Missouri</option>
+        <option value="montana.html">Montana</option>
+        <option value="nebraska.html">Nebraska</option>
+        <option value="nevada.html">Nevada</option>
+        <option value="new_hampshire.html">New Hampshire</option>
+        <option value="new_jersey.html">New Jersey</option>
+        <option value="new_mexico.html">New Mexico</option>
+        <option value="new_york.html">New York</option>
+        <option value="north_carolina.html">North Carolina</option>
+        <option value="north_dakota.html">North Dakota</option>
+        <option value="ohio.html">Ohio</option>
+        <option value="oklahoma.html">Oklahoma</option>
+        <option value="oregon.html">Oregon</option>
+        <option value="pennsylvania.html">Pennsylvania</option>
+        <option value="rhode_island.html">Rhode Island</option>
+        <option value="south_carolina.html">South Carolina</option>
+        <option value="south_dakota.html">South Dakota</option>
+        <option value="tennessee.html">Tennessee</option>
+        <option value="texas.html">Texas</option>
+        <option value="utah.html">Utah</option>
+        <option value="vermont.html">Vermont</option>
+        <option value="virginia.html">Virginia</option>
+        <option value="washington.html">Washington</option>
+        <option value="west_virginia.html">West Virginia</option>
+        <option value="wisconsin.html">Wisconsin</option>
+        <option value="wyoming.html">Wyoming</option>
+      </select>
+    </form>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Rob Man for President. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 Robert Short for President. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('states').addEventListener('change', function() {
+      window.location.href = this.value;
+    });
+  </script>
 </body>
 </html>
-
